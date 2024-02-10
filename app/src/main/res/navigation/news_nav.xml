@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav"
+    app:startDestination="@+id/newsListFragment">
+
+    <fragment
+        android:id="@+id/newsListFragment"
+        android:name="com.waiyanphyo.betternews.ui.newsList.NewsListFragment"
+        android:label="Better News"
+        tools:layout="@layout/fragment_news_list" >
+        <action
+            android:id="@+id/action_newsListFragment_to_newsDetailFragment"
+            app:destination="@id/newsDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsDetailFragment"
+        android:name="com.waiyanphyo.betternews.ui.newsDetail.NewsDetailFragment"
+        tools:layout="@layout/fragment_news_detail" >
+        <argument
+            android:name="article_id"
+            app:argType="integer" />
+    </fragment>
+</navigation>

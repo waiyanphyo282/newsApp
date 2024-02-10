@@ -1,0 +1,6 @@
+package com.waiyanphyo.betternews.data.model
+
+data class Source(
+    val id: String?,
+    val name: String
+)

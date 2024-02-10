@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Better News</string>
+    <string name="search">Search</string>
+    <string name="view_content"><u>View Full Content</u></string>
+</resources>
